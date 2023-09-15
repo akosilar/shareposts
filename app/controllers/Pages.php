@@ -9,7 +9,7 @@
             
             
             $data = [
-                'title' => 'LarsMVC'
+                'title' => 'SharePosts'
 
             ];
 
