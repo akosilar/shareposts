@@ -9,7 +9,8 @@
             
             
             $data = [
-                'title' => 'SharePosts'
+                'title' => 'SharePosts',
+                'description' => 'Simple social network built on the LarsMVC PHP framework'
 
             ];
 
@@ -18,7 +19,8 @@
 
         public function about() {
             $data = [
-                'title' => 'about'
+                'title' => 'About',
+                'description' => 'App to share posts with other users'
             ];
             $this->view('pages/about' ,$data);
 
