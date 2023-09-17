@@ -3,7 +3,7 @@
 
       //Flash message helper
     //Example -flash('Register Success'. 'you are now registered', 'alert alert-danger');
-    //Display in view <? php echo flash('register_success');
+    //Display in view 
     function flash($name = '', $message = '', $class = 'alert alert-success'){
         if(!empty($name)){
             if(!empty($message) && empty($_SESSION[$name])){
@@ -23,6 +23,13 @@
                 unset($_SESSION[$name. '_class']);
         } 
 
+        }
+    }
+    function isLoggedIn(){
+        if(isset($_SESSION['user_id'])){
+            return true;
+        }else {
+            return false;
         }
     }
 
