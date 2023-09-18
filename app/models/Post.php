@@ -63,5 +63,18 @@
             return $row;
         }
 
+        public function deletePost($id){
+            $this->db->query('DELETE FROM posts WHERE id = :id');
+            //bind values
+            $this->db->bind(':id', $id);
+
+
+            //execute
+            if($this->db->execute()) {
+                return true;
+            }else {
+                return false;
+            }
+        }
 
     }
